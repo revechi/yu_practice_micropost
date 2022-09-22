@@ -22,8 +22,6 @@ services:
       HOST: localhost
     depends_on:
       - db
-
-
   db:
     image: "postgres"
     command: postgres -c log_destination=stderr -c log_statement=all -c log_connections=on -c log_disconnections=on
@@ -35,3 +33,4 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: dev
       POSTGRES_DB: dev
+
