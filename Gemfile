@@ -61,3 +61,4 @@ gem 'net-pop'
 
 gem 'bootstrap-sass', '3.4.1'
 gem 'rails-controller-testing'
+gem 'bcrypt',         '3.1.13'
