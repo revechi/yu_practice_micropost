@@ -37,8 +37,4 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
-
-  test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
-  end
 end
